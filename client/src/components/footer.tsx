@@ -1,4 +1,4 @@
-import { Navigation as NavigationIcon } from "lucide-react";
+import tracerLogo from "@assets/tracer fleet color same height_1751478084474.png";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -9,15 +9,16 @@ export default function Footer() {
   };
 
   return (
-    <footer id="resources" className="bg-tracer-dark text-white py-16">
+    <footer id="resources" className="bg-black text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-4 gap-8">
           <div className="lg:col-span-2">
             <div className="flex items-center mb-6">
-              <div className="w-8 h-8 bg-tracer-blue rounded-lg flex items-center justify-center mr-3">
-                <NavigationIcon className="text-white h-5 w-5" />
-              </div>
-              <span className="text-xl font-bold">Tracer Fleet</span>
+              <img 
+                src={tracerLogo} 
+                alt="Tracer Fleet Logo" 
+                className="h-8 w-auto mr-3"
+              />
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
               Unlock the potential of your operations with advanced fleet telematics solutions that improve visibility, automate operations, and identify risks.
@@ -29,7 +30,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => scrollToSection('products')}
-                  className="hover:text-tracer-blue transition-colors text-left"
+                  className="hover:text-gray-100 transition-colors text-left"
                 >
                   Fleet Tracking
                 </button>
@@ -37,7 +38,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => scrollToSection('products')}
-                  className="hover:text-tracer-blue transition-colors text-left"
+                  className="hover:text-gray-100 transition-colors text-left"
                 >
                   Driver Monitoring
                 </button>
@@ -45,7 +46,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => scrollToSection('products')}
-                  className="hover:text-tracer-blue transition-colors text-left"
+                  className="hover:text-gray-100 transition-colors text-left"
                 >
                   Fuel Management
                 </button>
@@ -53,7 +54,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => scrollToSection('products')}
-                  className="hover:text-tracer-blue transition-colors text-left"
+                  className="hover:text-gray-100 transition-colors text-left"
                 >
                   Compliance
                 </button>
@@ -66,7 +67,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => scrollToSection('about')}
-                  className="hover:text-tracer-blue transition-colors text-left"
+                  className="hover:text-gray-100 transition-colors text-left"
                 >
                   About
                 </button>
@@ -74,7 +75,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => scrollToSection('resources')}
-                  className="hover:text-tracer-blue transition-colors text-left"
+                  className="hover:text-gray-100 transition-colors text-left"
                 >
                   Resources
                 </button>
@@ -82,7 +83,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => scrollToSection('contact')}
-                  className="hover:text-tracer-blue transition-colors text-left"
+                  className="hover:text-gray-100 transition-colors text-left"
                 >
                   Support
                 </button>
@@ -90,7 +91,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => scrollToSection('contact')}
-                  className="hover:text-tracer-blue transition-colors text-left"
+                  className="hover:text-gray-100 transition-colors text-left"
                 >
                   Contact
                 </button>

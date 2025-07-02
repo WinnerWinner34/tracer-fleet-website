@@ -9,28 +9,28 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="bg-gradient-to-br from-blue-50 to-white py-20">
+    <section id="home" className="bg-black py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-4xl lg:text-6xl font-bold text-tracer-dark mb-6 leading-tight">
+            <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               See and fix problems faster with{" "}
-              <span className="text-tracer-blue">Tracer Fleet Telematics</span>
+              <span className="text-white">Tracer Fleet Telematics</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
               Help your fleet be safer, more efficient, and more profitable with telematics software that puts all your data in one place.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 onClick={() => scrollToSection('contact')}
-                className="bg-tracer-blue text-white hover:bg-blue-600"
+                className="bg-white text-black hover:bg-gray-200"
                 size="lg"
               >
                 Get Started
               </Button>
               <Button 
                 variant="outline"
-                className="border-2 border-tracer-blue text-tracer-blue hover:bg-tracer-blue hover:text-white"
+                className="border-2 border-white text-white hover:bg-white hover:text-black"
                 size="lg"
               >
                 Watch Demo

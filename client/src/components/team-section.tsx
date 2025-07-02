@@ -45,7 +45,7 @@ export default function TeamSection() {
     <section id="about" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-tracer-dark mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-black mb-4">
             Empower your company with Tracer's vehicle telematics system
           </h2>
         </div>
@@ -61,12 +61,12 @@ export default function TeamSection() {
                     className="w-32 h-32 rounded-full mx-auto object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-bold text-tracer-dark mb-4 text-center">{role.title}</h3>
-                <h4 className="text-lg font-semibold text-tracer-blue mb-4">{role.subtitle}</h4>
+                <h3 className="text-xl font-bold text-black mb-4 text-center">{role.title}</h3>
+                <h4 className="text-lg font-semibold text-black mb-4">{role.subtitle}</h4>
                 <ul className="space-y-3 text-gray-600">
                   {role.benefits.map((benefit, benefitIndex) => (
                     <li key={benefitIndex} className="flex items-start">
-                      <Check className="text-tracer-blue mt-1 mr-3 h-4 w-4 flex-shrink-0" />
+                      <Check className="text-black mt-1 mr-3 h-4 w-4 flex-shrink-0" />
                       <span>{benefit}</span>
                     </li>
                   ))}

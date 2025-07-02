@@ -45,10 +45,10 @@ export default function SavingsCalculator() {
   };
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section id="calculator" className="py-20 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold text-tracer-dark mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-black mb-4">
             Calculate Your Fleet Savings
           </h2>
           <p className="text-lg text-gray-600">
@@ -121,7 +121,7 @@ export default function SavingsCalculator() {
                 
                 <Button 
                   type="submit" 
-                  className="w-full bg-tracer-blue text-white hover:bg-blue-600"
+                  className="w-full bg-black text-white hover:bg-gray-800"
                   disabled={calculatorMutation.isPending}
                 >
                   {calculatorMutation.isPending ? (
@@ -154,13 +154,13 @@ export default function SavingsCalculator() {
                     <div className="text-sm text-gray-600">Annual Savings</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-tracer-blue">
+                    <div className="text-2xl font-bold text-black">
                       ${results.tracer_monthly_cost.toLocaleString()}
                     </div>
                     <div className="text-sm text-gray-600">Tracer Monthly Cost</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-tracer-dark">
+                    <div className="text-2xl font-bold text-black">
                       {results.roi_months} months
                     </div>
                     <div className="text-sm text-gray-600">ROI Timeline</div>
@@ -169,7 +169,7 @@ export default function SavingsCalculator() {
                 <div className="mt-6">
                   <Button 
                     onClick={scrollToContact}
-                    className="bg-tracer-blue text-white hover:bg-blue-600"
+                    className="bg-black text-white hover:bg-gray-800"
                   >
                     Contact Sales Team
                   </Button>

@@ -4,28 +4,28 @@
 
 :root {
   --background: hsl(0, 0%, 100%);
-  --foreground: hsl(218, 54%, 11%);
-  --muted: hsl(210, 40%, 96%);
-  --muted-foreground: hsl(215, 13%, 45%);
+  --foreground: hsl(0, 0%, 0%);
+  --muted: hsl(0, 0%, 96%);
+  --muted-foreground: hsl(0, 0%, 45%);
   --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(218, 54%, 11%);
+  --popover-foreground: hsl(0, 0%, 0%);
   --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(218, 54%, 11%);
-  --border: hsl(214, 32%, 91%);
-  --input: hsl(214, 32%, 91%);
-  --primary: hsl(207, 90%, 54%);
-  --primary-foreground: hsl(211, 100%, 99%);
-  --secondary: hsl(210, 40%, 96%);
-  --secondary-foreground: hsl(222, 47%, 11%);
-  --accent: hsl(210, 40%, 96%);
-  --accent-foreground: hsl(222, 47%, 11%);
+  --card-foreground: hsl(0, 0%, 0%);
+  --border: hsl(0, 0%, 91%);
+  --input: hsl(0, 0%, 91%);
+  --primary: hsl(0, 0%, 0%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(0, 0%, 96%);
+  --secondary-foreground: hsl(0, 0%, 11%);
+  --accent: hsl(0, 0%, 96%);
+  --accent-foreground: hsl(0, 0%, 11%);
   --destructive: hsl(0, 84%, 60%);
   --destructive-foreground: hsl(60, 9%, 98%);
-  --ring: hsl(207, 90%, 54%);
+  --ring: hsl(0, 0%, 0%);
   --radius: 0.5rem;
-  --tracer-blue: hsl(207, 90%, 54%);
-  --tracer-dark: hsl(218, 54%, 11%);
-  --tracer-gray: hsl(214, 32%, 91%);
+  --tracer-primary: hsl(0, 0%, 0%);
+  --tracer-secondary: hsl(0, 0%, 100%);
+  --tracer-gray: hsl(0, 0%, 91%);
 }
 
 .dark {
@@ -62,20 +62,20 @@
 }
 
 @layer utilities {
-  .text-tracer-blue {
-    color: var(--tracer-blue);
+  .text-tracer-primary {
+    color: var(--tracer-primary);
   }
   
-  .bg-tracer-blue {
-    background-color: var(--tracer-blue);
+  .bg-tracer-primary {
+    background-color: var(--tracer-primary);
   }
   
-  .text-tracer-dark {
-    color: var(--tracer-dark);
+  .text-tracer-secondary {
+    color: var(--tracer-secondary);
   }
   
-  .bg-tracer-dark {
-    background-color: var(--tracer-dark);
+  .bg-tracer-secondary {
+    background-color: var(--tracer-secondary);
   }
   
   .border-tracer-gray {

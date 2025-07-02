@@ -39,7 +39,7 @@ export default function FeaturesGrid() {
     <section id="products" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-tracer-dark mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-black mb-4">
             Don't just track. Make your fleet data work for you.
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -51,10 +51,10 @@ export default function FeaturesGrid() {
           {features.map((feature, index) => (
             <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-8">
-                <div className="w-12 h-12 bg-tracer-blue rounded-lg flex items-center justify-center mb-6">
+                <div className="w-12 h-12 bg-black rounded-lg flex items-center justify-center mb-6">
                   <feature.icon className="text-white h-6 w-6" />
                 </div>
-                <h3 className="text-xl font-bold text-tracer-dark mb-4">{feature.title}</h3>
+                <h3 className="text-xl font-bold text-black mb-4">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </CardContent>
             </Card>

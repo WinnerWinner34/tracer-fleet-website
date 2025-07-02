@@ -50,7 +50,7 @@ export default function LeadCapture() {
     <section id="contact" className="py-20 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold text-tracer-dark mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-black mb-4">
             Ready to Transform Your Fleet?
           </h2>
           <p className="text-lg text-gray-600">
@@ -168,7 +168,7 @@ export default function LeadCapture() {
                 
                 <Button 
                   type="submit" 
-                  className="w-full bg-tracer-blue text-white hover:bg-blue-600"
+                  className="w-full bg-black text-white hover:bg-gray-800"
                   disabled={leadMutation.isPending}
                 >
                   {leadMutation.isPending ? (

@@ -3,7 +3,7 @@ export default function FeaturesSection() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-tracer-dark mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-black mb-4">
             Direct your fleet confidently with telematics at your fingertips
           </h2>
         </div>
@@ -11,7 +11,7 @@ export default function FeaturesSection() {
         {/* Feature 1: Unify Data */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <div>
-            <h3 className="text-2xl font-bold text-tracer-dark mb-4">Unify data across your business</h3>
+            <h3 className="text-2xl font-bold text-black mb-4">Unify data across your business</h3>
             <p className="text-lg text-gray-600 leading-relaxed">
               Tracer's integrated operations platform consolidates vehicle and asset data, videos, and more into one place, helping you make smarter decisions.
             </p>
@@ -28,7 +28,7 @@ export default function FeaturesSection() {
         {/* Feature 2: Real-time Context */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <div className="lg:order-last">
-            <h3 className="text-2xl font-bold text-tracer-dark mb-4">Get real-time context</h3>
+            <h3 className="text-2xl font-bold text-black mb-4">Get real-time context</h3>
             <p className="text-lg text-gray-600 leading-relaxed">
               Tracer links each vehicle's video and telematics data. You get a complete picture that includes location, fuel level, dash cam footage, and more.
             </p>
@@ -45,7 +45,7 @@ export default function FeaturesSection() {
         {/* Feature 3: Simplify Workflows */}
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h3 className="text-2xl font-bold text-tracer-dark mb-4">Simplify workflows</h3>
+            <h3 className="text-2xl font-bold text-black mb-4">Simplify workflows</h3>
             <p className="text-lg text-gray-600 leading-relaxed">
               Every time you switch between platforms, you run the risk of making mistakes or missing key details. Instead, see all telematics signals in one interface.
             </p>
