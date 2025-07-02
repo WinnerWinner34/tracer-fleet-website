@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracer Fleet - Advanced Fleet Telematics Solutions</title>
+    <meta name="description" content="Transform your fleet operations with Tracer's advanced telematics solutions. Real-time tracking, driver monitoring, and comprehensive analytics.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-content">
+            <div class="nav-logo">
+                <img src="tracer-logo.png" alt="Tracer Fleet Logo" class="logo">
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#calculator" class="nav-link">Savings Calculator</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact Us</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#features" class="mobile-link">Features</a>
+        <a href="#calculator" class="mobile-link">Savings Calculator</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#contact" class="mobile-link">Contact Us</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Advanced Fleet Telematics for Modern Operations
+                </h1>
+                <p class="hero-subtitle">
+                    Transform your fleet with real-time tracking, driver monitoring, and comprehensive analytics. 
+                    Reduce costs, improve safety, and optimize efficiency with Tracer Fleet's cutting-edge solutions.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                        Get Started
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('calculator')">
+                        Calculate Savings
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">25%</div>
+                    <div class="stat-label">Fuel Cost Reduction</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">40%</div>
+                    <div class="stat-label">Maintenance Savings</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50%</div>
+                    <div class="stat-label">Accident Reduction</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Customer Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Comprehensive Fleet Management Solutions</h2>
+                <p class="section-subtitle">Everything you need to optimize your fleet operations in one powerful platform</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="map-pin"></i>
+                    </div>
+                    <h3 class="feature-title">Real-Time Tracking</h3>
+                    <p class="feature-description">Monitor vehicle locations, routes, and status with precision GPS tracking and live updates.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="user-check"></i>
+                    </div>
+                    <h3 class="feature-title">Driver Monitoring</h3>
+                    <p class="feature-description">Improve safety with driver behavior analysis, scoring, and real-time alerts.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="fuel"></i>
+                    </div>
+                    <h3 class="feature-title">Fuel Management</h3>
+                    <p class="feature-description">Optimize fuel consumption with detailed analytics and efficiency recommendations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="shield-check"></i>
+                    </div>
+                    <h3 class="feature-title">Compliance</h3>
+                    <p class="feature-description">Stay compliant with automated reporting, HOS tracking, and regulatory updates.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="wrench"></i>
+                    </div>
+                    <h3 class="feature-title">Maintenance Alerts</h3>
+                    <p class="feature-description">Prevent breakdowns with predictive maintenance scheduling and automated alerts.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="bar-chart"></i>
+                    </div>
+                    <h3 class="feature-title">Analytics Dashboard</h3>
+                    <p class="feature-description">Make data-driven decisions with comprehensive reporting and insights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Savings Calculator Section -->
+    <section id="calculator" class="calculator-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Calculate Your Fleet Savings</h2>
+                <p class="section-subtitle">See how much you could save with Tracer Fleet's telematics solutions</p>
+            </div>
+            <div class="calculator-container">
+                <form id="calculatorForm" class="calculator-form">
+                    <div class="form-group">
+                        <label for="fleetSize" class="form-label">Fleet Size (number of vehicles)</label>
+                        <input type="number" id="fleetSize" name="fleet_size" class="form-input" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fuelCost" class="form-label">Monthly Fuel Cost per Vehicle ($)</label>
+                        <input type="number" id="fuelCost" name="fuel_cost" class="form-input" min="0" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="efficiencyImprovement" class="form-label">Expected Efficiency Improvement (%)</label>
+                        <input type="number" id="efficiencyImprovement" name="efficiency_improvement" class="form-input" min="0" max="100" value="15" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary calculator-submit">
+                        Calculate Savings
+                    </button>
+                </form>
+                <div id="calculatorResults" class="calculator-results" style="display: none;">
+                    <h3 class="results-title">Your Potential Savings</h3>
+                    <div class="results-grid">
+                        <div class="result-item">
+                            <div class="result-label">Monthly Savings</div>
+                            <div class="result-value" id="monthlySavings">$0</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-label">Annual Savings</div>
+                            <div class="result-value" id="annualSavings">$0</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-label">ROI</div>
+                            <div class="result-value" id="roi">0%</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="result-label">Monthly Cost</div>
+                            <div class="result-value" id="monthlyCost">$0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Empower your company with Tracer's vehicle telematics system</h2>
+            </div>
+            <div class="roles-grid">
+                <div class="role-card">
+                    <div class="role-image">
+                        <i data-lucide="users" class="role-icon"></i>
+                    </div>
+                    <h3 class="role-title">Fleet Managers</h3>
+                    <h4 class="role-subtitle">Complete fleet oversight and control</h4>
+                    <ul class="role-benefits">
+                        <li><i data-lucide="check" class="check-icon"></i>Real-time vehicle tracking and monitoring</li>
+                        <li><i data-lucide="check" class="check-icon"></i>Comprehensive reporting and analytics</li>
+                        <li><i data-lucide="check" class="check-icon"></i>Route optimization and efficiency insights</li>
+                        <li><i data-lucide="check" class="check-icon"></i>Maintenance scheduling and alerts</li>
+                    </ul>
+                </div>
+                <div class="role-card">
+                    <div class="role-image">
+                        <i data-lucide="user-check" class="role-icon"></i>
+                    </div>
+                    <h3 class="role-title">Safety Managers</h3>
+                    <h4 class="role-subtitle">Enhanced safety and compliance</h4>
+                    <ul class="role-benefits">
+                        <li><i data-lucide="check" class="check-icon"></i>Driver behavior monitoring and scoring</li>
+                        <li><i data-lucide="check" class="check-icon"></i>Real-time safety alerts and notifications</li>
+                        <li><i data-lucide="check" class="check-icon"></i>Compliance tracking and reporting</li>
+                        <li><i data-lucide="check" class="check-icon"></i>Accident prevention and risk reduction</li>
+                    </ul>
+                </div>
+                <div class="role-card">
+                    <div class="role-image">
+                        <i data-lucide="trending-up" class="role-icon"></i>
+                    </div>
+                    <h3 class="role-title">Operations Directors</h3>
+                    <h4 class="role-subtitle">Strategic insights and cost optimization</h4>
+                    <ul class="role-benefits">
+                        <li><i data-lucide="check" class="check-icon"></i>Cost reduction and efficiency improvements</li>
+                        <li><i data-lucide="check" class="check-icon"></i>Performance metrics and KPI tracking</li>
+                        <li><i data-lucide="check" class="check-icon"></i>Strategic planning and decision support</li>
+                        <li><i data-lucide="check" class="check-icon"></i>ROI measurement and optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ready to Transform Your Fleet?</h2>
+                <p class="section-subtitle">Get in touch with our experts to learn how Tracer Fleet can optimize your operations</p>
+            </div>
+            <div class="contact-container">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactName" class="form-label">Full Name *</label>
+                            <input type="text" id="contactName" name="name" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail" class="form-label">Email Address *</label>
+                            <input type="email" id="contactEmail" name="email" class="form-input" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactCompany" class="form-label">Company</label>
+                            <input type="text" id="contactCompany" name="company" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPhone" class="form-label">Phone Number</label>
+                            <input type="tel" id="contactPhone" name="phone" class="form-input">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contactFleetSize" class="form-label">Fleet Size</label>
+                            <input type="number" id="contactFleetSize" name="fleet_size" class="form-input" min="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSolution" class="form-label">Current Solution</label>
+                            <input type="text" id="contactSolution" name="current_solution" class="form-input" placeholder="What system do you currently use?">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage" class="form-label">Message</label>
+                        <textarea id="contactMessage" name="message" class="form-textarea" rows="4" placeholder="Tell us about your fleet management needs..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary contact-submit">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="tracer-logo.png" alt="Tracer Fleet Logo" class="footer-logo">
+                    <p class="footer-description">
+                        Unlock the potential of your operations with advanced fleet telematics solutions that improve visibility, automate operations, and identify risks.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Products</h4>
+                        <ul class="footer-list">
+                            <li><a href="#features" class="footer-link">Fleet Tracking</a></li>
+                            <li><a href="#features" class="footer-link">Driver Monitoring</a></li>
+                            <li><a href="#features" class="footer-link">Fuel Management</a></li>
+                            <li><a href="#features" class="footer-link">Compliance</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-title">Company</h4>
+                        <ul class="footer-list">
+                            <li><a href="#about" class="footer-link">About</a></li>
+                            <li><a href="#contact" class="footer-link">Contact</a></li>
+                            <li><a href="#contact" class="footer-link">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Tracer Fleet. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay" style="display: none;">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Success Message -->
+    <div id="successMessage" class="success-message" style="display: none;">
+        <div class="success-content">
+            <i data-lucide="check-circle" class="success-icon"></i>
+            <span class="success-text"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
